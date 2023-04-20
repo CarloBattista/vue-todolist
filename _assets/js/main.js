@@ -49,7 +49,15 @@ createApp({
 
         }
     },
-    methods() {
-
+    methods: {
+        // Al click del button viene aggiunto l'item nell array
+        btnSubmit(){
+            if(this.addTodo){
+                this.todos.push({
+                    text: this.addTodo,
+                });
+                this.addTodo = '';
+            }
+        },
     },
 }).mount('#app')
