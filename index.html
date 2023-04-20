@@ -34,7 +34,7 @@
                     <li v-for:="(element, index) in todos" class="listItem">
                         <h1 class="nameObject">{{ element.text }}</h1>
                         <div class="container_right_icon">
-                            <button class="btnFunction">
+                            <button class="btnFunction" @click="deleteItem(index)">
                                 <i class="fa-regular fa-trash-can"></i>
                             </button>
                         </div>

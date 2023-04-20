@@ -61,5 +61,10 @@ createApp({
                 this.addTodo = '';
             }
         },
+
+        // Al click del button viene rimosso l'item dall array
+        deleteItem(index){
+            this.todos.splice(index, 1)
+        },
     },
 }).mount('#app')
