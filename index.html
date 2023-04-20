@@ -32,7 +32,7 @@
                 <div class="container_message"></div>
                 <ul class="shoppingList">
                     <li v-for:="(element, index) in todos" class="listItem">
-                        <h1 class="nameObject">Pane</h1>
+                        <h1 class="nameObject">{{ element.text }}</h1>
                         <div class="container_right_icon">
                             <button class="btnFunction">
                                 <i class="fa-regular fa-trash-can"></i>

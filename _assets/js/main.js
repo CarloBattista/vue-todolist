@@ -41,7 +41,7 @@ createApp({
                 {
                     text: 'Fare il bucato',
                     done: false
-                }
+                },
             ],
 
         }
