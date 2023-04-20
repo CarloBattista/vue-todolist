@@ -29,8 +29,7 @@
             </div>
             <!-- MainView -->
             <div class="mainView">
-                <div class="container_message"></div>
-                <ul class="shoppingList">
+                <ul v-if="todos.length" class="shoppingList">
                     <li v-for:="(element, index) in todos" class="listItem">
                         <h1 class="nameObject">{{ element.text }}</h1>
                         <div class="container_right_icon">
@@ -40,6 +39,9 @@
                         </div>
                     </li>
                 </ul>
+                <div v-else class="container_message">
+                    <span class="alertText">Non ci sono ToDo, Aggiungine una!! 😀</span>
+                </div>
             </div>
         </div>
     </div>
