@@ -31,7 +31,7 @@
             <div class="mainView">
                 <div class="container_message"></div>
                 <ul class="shoppingList">
-                    <li class="listItem">
+                    <li v-for:="(element, index) in todos" class="listItem">
                         <h1 class="nameObject">Pane</h1>
                         <div class="container_right_icon">
                             <button class="btnFunction">
