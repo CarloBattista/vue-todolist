@@ -23,7 +23,7 @@
             <div class="header">
                 <h1 class="headingTitle">ToDoList</h1>
                 <div class="container_addItem">
-                    <input type="text" class="inputSearchAdd" id="inputList" placeholder="Scrivi qualcosa da aggiungere alla lista">
+                    <input v-model="addTodo" type="text" class="inputSearchAdd" id="inputList" placeholder="Scrivi qualcosa da aggiungere alla lista">
                     <button type="submit" class="btnSubmit" id="btnSub">Aggiungi</button>
                 </div>
             </div>

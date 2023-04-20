@@ -44,6 +44,12 @@ createApp({
                 },
             ],
 
+            // Variabile per selezionare l'input
+            addTodo: '',
+
         }
-    }
+    },
+    methods() {
+
+    },
 }).mount('#app')
