@@ -52,8 +52,8 @@ createApp({
     methods: {
         // Al click del button viene aggiunto l'item nell array
         btnSubmit(){
-            // Se però non scrivi nulla ma clicchi il btn non inserisce niente nell array.
-            if(this.addTodo && this.addTodo.length != ''){
+            // Se però non scrivi nulla ma clicchi il btn non inserisce niente nell array. se scrivi qualcosa con meno di 3 lettere non viene aggiunto nulla
+            if(this.addTodo && this.addTodo.length != '' && this.addTodo.length > 3){
                 // Pusha nell array
                 this.todos.push({
                     text: this.addTodo,
